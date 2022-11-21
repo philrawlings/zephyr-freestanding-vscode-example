@@ -9,5 +9,13 @@ elseif (Test-Path -Path $PSScriptRoot\board.txt) {
 else {
     $board = & $PSScriptRoot\select-board.ps1
 }
-Write-Host "Generating build for ${board}" -ForegroundColor Yellow
-west build -p always -b ${board}
+
+$boardsArg = ""
+if (Test-Path -Path boards) {
+    $boardsArg = ' -- -DBOARD_ROOT="."'
+}
+
+Write-Host "Generating build for ${board}..." -ForegroundColor DarkCyan
+$command = "west build -p always -b " + $board + $boardsArg
+Write-Host $command -ForegroundColor Yellow
+Invoke-Expression($command)
