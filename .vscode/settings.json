@@ -10,11 +10,6 @@
           "path": "pwsh.exe",
           "args": ["-noexit", "-command", "& $HOME\\zephyrproject\\.venv\\Scripts\\activate.ps1"]
         }
-    },
-    "files.associations": {
-        "kernel.h": "c",
-        "gpio.h": "c",
-        "kernel_includes.h": "c"
-    },
+    }
     //"terminal.integrated.defaultProfile.windows": "Zephyr Terminal" // Dont make this the default otherwise tasks wont work
 }
