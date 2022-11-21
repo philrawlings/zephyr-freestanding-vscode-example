@@ -1,12 +1,5 @@
 {
     "version": 4,
-    "env": {
-        "zephyrIncludePath": [
-            "${env:USERPROFILE}\\zephyrproject\\zephyr\\include\\**",
-            "${env:USERPROFILE}\\zephyr-sdk-0.15.1\\arm-zephyr-eabi\\lib\\gcc\\arm-zephyr-eabi\\12.1.0\\include",
-            "${env:USERPROFILE}\\zephyr-sdk-0.15.1\\arm-zephyr-eabi\\arm-zephyr-eabi\\**"
-        ]
-    },
     "configurations": [
         {
             "name": "Zephyr",
@@ -16,7 +9,10 @@
             "intelliSenseMode": "windows-gcc-arm",
             "compileCommands": "",
             "includePath": [
-                "${zephyrIncludePath}"
+                "${env:USERPROFILE}\\zephyrproject\\zephyr\\include\\**",
+                "${env:USERPROFILE}\\zephyr-sdk-0.15.1\\arm-zephyr-eabi\\lib\\gcc\\arm-zephyr-eabi\\12.1.0\\include",
+                "${env:USERPROFILE}\\zephyr-sdk-0.15.1\\arm-zephyr-eabi\\arm-zephyr-eabi\\**",
+                "${env:USERPROFILE}\\zephyrproject\\zephyr\\build\\zephyr\\include\\generated\\**"
             ]
         }
     ]
