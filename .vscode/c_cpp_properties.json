@@ -1,0 +1,21 @@
+{
+    "version": 4,
+    "env": {
+        "zephyrIncludePath": [
+            "${env:USERPROFILE}\\zephyrproject\\zephyr\\include\\**", 
+            "${env:USERPROFILE}\\zephyr-sdk-0.15.1\\arm-zephyr-eabi\\lib\\gcc\\arm-zephyr-eabi\\12.1.0\\include",
+            "${env:USERPROFILE}\\zephyr-sdk-0.15.1\\arm-zephyr-eabi\\arm-zephyr-eabi\\**"
+        ]
+      },
+    "configurations": [
+        {
+            "name": "Zephyr",
+            "compilerPath": "",
+            "cStandard": "c99",
+            "cppStandard": "c++11",
+            "intelliSenseMode": "gcc-x64",
+            "compileCommands": "",
+            "includePath": ["${zephyrIncludePath}"]
+        }
+    ]
+}

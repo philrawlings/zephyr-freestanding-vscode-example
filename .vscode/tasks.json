@@ -1,0 +1,36 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Select Board",
+        "type": "shell",
+        "command": "./scripts/select-board.ps1",
+        "problemMatcher": [],
+        "presentation": {
+          "showReuseMessage": false
+        }
+      },
+      {
+        "label": "Build",
+        "type": "shell",
+        "command": "./scripts/build.ps1",
+        "problemMatcher": [],
+        "group": {
+          "kind": "build",
+          "isDefault": true
+        },
+        "presentation": {
+          "showReuseMessage": false
+        }
+      },
+      {
+        "label": "Flash",
+        "type": "shell",
+        "command": "./scripts/flash.ps1",
+        "problemMatcher": [],
+        "presentation": {
+          "showReuseMessage": false
+        }
+      }
+    ]
+  }

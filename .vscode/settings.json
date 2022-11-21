@@ -1,0 +1,20 @@
+ {
+    "cortex-debug.openocdPath": "${env:ProgramFiles}\\openocd\\bin\\openocd",
+    //"terminal.integrated.env.linux": {},
+    //"terminal.integrated.env.osx": {},
+    "terminal.integrated.env.windows": {
+        "ZEPHYR_BASE": "${env:HOMEDRIVE}${env:HOMEPATH}\\zephyrproject\\zephyr"
+    },    
+    "terminal.integrated.profiles.windows": {
+        "Zephyr Terminal": {
+          "path": "pwsh.exe",
+          "args": ["-noexit", "-command", "& $HOME\\zephyrproject\\.venv\\Scripts\\activate.ps1"]
+        }
+    },
+    "files.associations": {
+        "kernel.h": "c",
+        "gpio.h": "c",
+        "kernel_includes.h": "c"
+    },
+    //"terminal.integrated.defaultProfile.windows": "Zephyr Terminal" // Dont make this the default otherwise tasks wont work
+}
