@@ -22,8 +22,8 @@ Uses the `west` tool to get a list of supported boards. The list is shown in a G
 
 ### Build
 
-Issues the `west build` command for the selected board (and shows the selection GUI is not board selected).
+Issues the `west build` command for the selected board (and shows the selection GUI if a board is not selected).
 
 ### Flash
 
-Issues the `west flash` command for the selected board (and shows the selection GUI is not board selected).
+Issues the `west flash` command for the selected board (and shows the selection GUI if a board is not selected).
