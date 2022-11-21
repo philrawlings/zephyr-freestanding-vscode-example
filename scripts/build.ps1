@@ -10,12 +10,12 @@ else {
     $board = & $PSScriptRoot\select-board.ps1
 }
 
-$boardsArg = ""
+$boardRootArg = ""
 if (Test-Path -Path boards) {
-    $boardsArg = ' -- -DBOARD_ROOT="."'
+    $boardRootArg = ' -- -DBOARD_ROOT="."'
 }
 
 Write-Host "Generating build for ${board}..." -ForegroundColor DarkCyan
-$command = "west build -p always -b " + $board + $boardsArg
+$command = "west build -p always -b " + $board + $boardRootArg
 Write-Host $command -ForegroundColor Yellow
 Invoke-Expression($command)
