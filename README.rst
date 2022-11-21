@@ -1,5 +1,14 @@
 .. _blinky-sample:
 
+
+Zephyr Freestanding VS Code Example
+###################################
+
+As per standard blinky sample with the following additions:
+#. Added `.vscode/settings.json` which defines ZEPHYR_BASE environment variable and a new terminal type (Zephyr Terminal) which activates the venv to enable the use of `west` commands.
+#. Added `.vscode/tasks.json` which defines `Select Board`, `Build` and `Flash` tasks (these call PowerShell scripts in the `scripts` directory.
+#. Added `.vscode/c_cpp_properties.json` to define locations for zephyr include files.
+
 Blinky
 ######
 
