@@ -1,0 +1,46 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "ST-Link Debug STM32F767ZI",
+            "device": "STM32F767ZI",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "executable": "build/zephyr/zephyr.elf",
+            "type": "cortex-debug",
+            "servertype": "stutil",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "Build",
+            //"svdFile": "C:\\ST\\STM32CubeIDE_1.6.1\\STM32CubeIDE\\plugins\\com.st.stm32cube.ide.mcu.productdb.debug_2.0.0.202107021202\\resources\\cmsis\\STMicroelectronics_CMSIS_SVD\\STM32F767.svd"
+        },
+        {
+            "name": "JLink Debug STM32F767ZI",
+            "device": "STM32F767ZI",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "executable": "build/zephyr/zephyr.elf",
+            "type": "cortex-debug",
+            "servertype": "jlink",
+            "interface": "swd",
+            "runToEntryPoint": "main",
+            "preLaunchTask": "Build",
+            //"svdFile": "C:\\ST\\STM32CubeIDE_1.6.1\\STM32CubeIDE\\plugins\\com.st.stm32cube.ide.mcu.productdb.debug_2.0.0.202107021202\\resources\\cmsis\\STMicroelectronics_CMSIS_SVD\\STM32F767.svd"
+        },        
+        {
+            "name": "Open OCD Debug STM32F767ZI",
+            "device": "STM32F767ZI",
+            "request": "launch",
+            "cwd": "${workspaceRoot}",
+            "executable": "build/zephyr/zephyr.elf",
+            "type": "cortex-debug",
+            "servertype": "openocd",
+            "configFiles": [
+                "interface/stlink.cfg",
+                "target/stm32f7x.cfg"
+            ],
+            "searchDir": [],
+            //"svdFile": "C:\\ST\\STM32CubeIDE_1.6.1\\STM32CubeIDE\\plugins\\com.st.stm32cube.ide.mcu.productdb.debug_2.0.0.202107021202\\resources\\cmsis\\STMicroelectronics_CMSIS_SVD\\STM32F767.svd"
+        },
+    ]
+}

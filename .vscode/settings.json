@@ -1,5 +1,8 @@
  {
-    "cortex-debug.openocdPath": "${env:ProgramFiles}\\openocd\\bin\\openocd",
+    "cortex-debug.openocdPath.windows": "${env:ProgramFiles}\\openocd\\bin\\openocd.exe",
+    "cortex-debug.gdbPath.windows": "${env:HOMEDRIVE}${env:HOMEPATH}\\zephyr-sdk-0.15.1\\arm-zephyr-eabi\\bin\\arm-zephyr-eabi-gdb.exe",
+    "cortex-debug.JLinkGDBServerPath.windows": null,
+    "cortex-debug.stutilPath.windows": "${env:ProgramFiles}\\STLINK Tools\\bin\\st-util.exe",
     //"terminal.integrated.env.linux": {},
     //"terminal.integrated.env.osx": {},
     "terminal.integrated.env.windows": {
@@ -14,7 +17,14 @@
     "files.associations": {
         "kernel.h": "c",
         "kernel_includes.h": "c",
-        "syscall.h": "c"
+        "syscall.h": "c",
+        "uart.h": "c",
+        "spi.h": "c",
+        "gpio.h": "c",
+        "spi_test.h": "c",
+        "errno.h": "c",
+        "acq_handler.h": "c",
+        "in.h": "c"
     }
     //"terminal.integrated.defaultProfile.windows": "Zephyr Terminal" // Dont make this the default otherwise tasks wont work
 }

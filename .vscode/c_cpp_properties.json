@@ -7,12 +7,13 @@
             "cStandard": "c99",
             "cppStandard": "c++11",
             "intelliSenseMode": "windows-gcc-arm",
-            "compileCommands": "",
+            "compileCommands": "${workspaceFolder}/build/compile_commands.json",
             "includePath": [
                 "${env:USERPROFILE}\\zephyrproject\\zephyr\\include\\**",
                 "${env:USERPROFILE}\\zephyr-sdk-0.15.1\\arm-zephyr-eabi\\lib\\gcc\\arm-zephyr-eabi\\12.1.0\\include",
                 "${env:USERPROFILE}\\zephyr-sdk-0.15.1\\arm-zephyr-eabi\\arm-zephyr-eabi\\**",
-                "${env:USERPROFILE}\\zephyrproject\\zephyr\\build\\zephyr\\include\\generated\\**"
+                "${env:USERPROFILE}\\zephyrproject\\zephyr\\build\\zephyr\\include\\generated\\**",
+                "${workspaceFolder}\\build\\zephyr\\include\\generated/**"
             ]
         }
     ]
