@@ -3,6 +3,7 @@
 Copy of standard [blinky] (https://github.com/zephyrproject-rtos/zephyr/tree/main/samples/basic/blinky) (`zephyrproject/zephyr/samples/basic/blinky`) sample with the following additions:
 - Added `.vscode/settings.json` which defines ZEPHYR_BASE environment variable and a new terminal type (Zephyr Terminal) which activates the venv to enable the use of `west` commands.
 - Added `.vscode/tasks.json` which defines `Select Board`, `Build` and `Flash` tasks (these call PowerShell scripts in the `scripts` directory.
+- Added `.vscode/launch.json` which defines debug profiles for ST-Link, JLink and OpenOCD. Note: only ST-Link has been tested currently.
 - Added `.vscode/c_cpp_properties.json` to define locations for zephyr include files.
 - Added `boards` directory with a custom nRF52840 board
 
