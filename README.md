@@ -27,3 +27,9 @@ Issues the `west build` command for the selected board (and shows the selection 
 ### Flash
 
 Issues the `west flash` command for the selected board (and shows the selection GUI if a board is not selected).
+
+## Debugging
+
+`launch.json` defines profiles for ST-Link, JLink and OpenOCD. This requires the `cortex-debug` VS code extension to be installed. Only ST-Link has been tested - it can be a bit flaky, sometimes need to reset the board and retry before the connection works. Build gets called before attempting to debug, but not sure if this is flashing the board (it might be). I always flashed the board first using the `Flash` task.
+
+Useful video which inspired some of the settings: https://www.youtube.com/watch?v=g2Kf6RbdrIs
